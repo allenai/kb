@@ -1,0 +1,2 @@
+0 0	Cats are quickest .
+6 7	The brown fox jumped over the laziest dog .

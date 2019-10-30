@@ -1,0 +1,46 @@
+DOCSTART_1_EU
+EU
+rejects
+MMSTART_11867	Germany
+German
+MMEND
+call
+to
+boycott
+MMSTART_31717	United_Kingdom
+British
+MMEND
+lamb
+.
+*NL*
+*NL*
+The
+MMSTART_9974	European_Commission
+European
+Commission
+MMEND
+said
+on
+Thursday
+it
+disagreed
+with
+MMSTART_11867	Germany
+German
+MMEND
+advice
+to
+consumers
+to
+shun
+MMSTART_31717	United_Kingdom
+British
+MMEND
+lamb
+until
+scientists
+determine
+whether
+it
+is
+dangerous

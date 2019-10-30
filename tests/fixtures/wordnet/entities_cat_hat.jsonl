@@ -1,0 +1,27 @@
+{"id": "cat%1:04:00::", "pos": "n", "synset": "computerized_tomography.n.01", "type": "lemma", "count": 5}
+{"id": "cat%1:05:00::", "pos": "n", "synset": "cat.n.01", "type": "lemma", "count": 0}
+{"id": "cat%1:05:02::", "pos": "n", "synset": "big_cat.n.01", "type": "lemma", "count": 0}
+{"id": "cat%1:06:01::", "pos": "n", "synset": "caterpillar.n.02", "type": "lemma", "count": 0}
+{"id": "cat%1:06:00::", "pos": "n", "synset": "cat-o'-nine-tails.n.01", "type": "lemma", "count": 0}
+{"id": "cat%1:06:02::", "pos": "n", "synset": "kat.n.01", "type": "lemma", "count": 0}
+{"id": "cat%1:18:00::", "pos": "n", "synset": "cat.n.03", "type": "lemma", "count": 2}
+{"id": "cat%1:18:01::", "pos": "n", "synset": "guy.n.01", "type": "lemma", "count": 0}
+{"id": "cat%2:29:00::", "pos": "v", "synset": "vomit.v.01", "type": "lemma", "count": 0}
+{"id": "cat%2:35:00::", "pos": "v", "synset": "cat.v.01", "type": "lemma", "count": 0}
+{"id": "cat.n.01", "pos": "n", "lemmas": ["cat%1:05:00::", "true_cat%1:05:00::"], "examples": [], "definition": "feline mammal usually having thick soft fur and no ability to roar: domestic cats; wildcats", "type": "synset"}
+{"id": "cat.n.03", "pos": "n", "lemmas": ["cat%1:18:00::"], "examples": ["what a cat she is!"], "definition": "a spiteful woman gossip", "type": "synset"}
+{"id": "cat.v.01", "pos": "v", "lemmas": ["cat%2:35:00::"], "examples": [], "definition": "beat with a cat-o'-nine-tails", "type": "synset"}
+{"id": "hat.n.02", "pos": "n", "lemmas": ["hat%1:04:00::"], "examples": ["he took off his politician's hat and talked frankly"], "definition": "an informal term for a person's role", "type": "synset"}
+{"id": "hat.n.01", "pos": "n", "lemmas": ["hat%1:06:00::", "chapeau%1:06:00::", "lid%1:06:01::"], "examples": [], "definition": "headdress that protects the head from bad weather; has shaped crown and usually a brim", "type": "synset"}
+{"id": "hat.v.01", "pos": "v", "lemmas": ["hat%2:29:00::"], "examples": ["He was unsuitably hatted"], "definition": "put on or wear a hat", "type": "synset"}
+{"id": "hat.v.02", "pos": "v", "lemmas": ["hat%2:40:00::"], "examples": [], "definition": "furnish with a hat", "type": "synset"}
+{"id": "hat%1:04:00::", "pos": "n", "synset": "hat.n.02", "type": "lemma", "count": 1}
+{"id": "hat%1:06:00::", "pos": "n", "synset": "hat.n.01", "type": "lemma", "count": 2}
+{"id": "hat%2:29:00::", "pos": "v", "synset": "hat.v.01", "type": "lemma", "count": 3}
+{"id": "hat%2:40:00::", "pos": "v", "synset": "hat.v.02", "type": "lemma", "count": 4}
+{"id": "hats%1:00:01::", "pos": "n", "synset": "hats.n.01", "type": "lemma", "count": 0}
+{"id": "person%1:03:00::", "pos": "n", "synset": "person.n.03", "type": "lemma", "count": 0}
+{"id": "person.n.03", "pos": "n", "lemmas": ["person%1:03:00::"], "examples": [], "definition": "Bob", "type": "synset"}
+{"id": "hat-trick%1:05:55::", "pos": "n", "synset": "hat-trick.n.55", "type": "lemma", "count": 0}
+{"id": "hat-trick.n.5", "pos": "n", "lemmas": ["hat-trick%1:05:55::"], "examples": [], "definition": "something", "type": "synset"}
+{"id": "hat-trick%1:01:03::", "pos": "n", "synset": "hat-trick.n.01", "type": "lemma", "count": 2}
