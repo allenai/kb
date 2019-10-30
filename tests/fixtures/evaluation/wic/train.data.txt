@@ -1,0 +1,5 @@
+carry	V	2-1	You must carry your camping gear .	Sound carries well over water .
+go	V	2-6	Messages must go through diplomatic channels .	Do you think the sofa will go through the door ?
+break	V	0-2	Break an alibi .	The wholesaler broke the container loads into palettes and boxes for local retailers .
+cup	N	8-4	He wore a jock strap with a metal cup .	Bees filled the waxen cups with honey .
+academy	N	1-2	The Academy of Music .	The French Academy .

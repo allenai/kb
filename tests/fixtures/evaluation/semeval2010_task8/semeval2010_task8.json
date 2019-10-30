@@ -1,0 +1,2 @@
+{"sentence": "The <e1>big cats</e1> jumped near the <e2>laziest brown dogs</e2>.", "label": "Other", "sent_id": 3088}
+{"sentence": "The <e2>big cats</e2> jumped <e1>near the laziest brown dogs</e1>.", "label": "Entity-Destination(e2,e1)", "sent_id": 3089}

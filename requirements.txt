@@ -1,0 +1,6 @@
+# this is the fp16_e branch
+git+git://github.com/matt-peters/allennlp.git@d7a9c6b7b295762c575e9588f168ceefb2f7d6d5
+pytest
+nltk
+ipython
+spacy

@@ -1,0 +1,2 @@
+[{"token": "Bob", "lemma": "person", "pos": "NOUN", "senses": ["1:03:00::"], "id": "d000.s000.t000"}, {"token": "scored", "lemma": "score", "pos": "VERB"}, {"token": "a", "lemma": "a", "pos": "DET"}, {"token": "hat trick", "lemma": "hat-trick", "pos": "NOUN", "senses": ["1:05:55::"], "id": "d000.s000.t001"}]
+[{"token": "The", "lemma": "the", "pos": "DET"}, {"token": "hat", "lemma": "hat", "pos": "NOUN", "senses": ["1:06:00::"], "id": "d000.s001.t000"}]

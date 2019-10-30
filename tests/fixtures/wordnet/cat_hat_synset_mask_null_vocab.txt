@@ -1,0 +1,12 @@
+@@UNKNOWN@@
+person.n.03
+hat-trick.n.5
+cat.v.01
+cat.n.03
+cat.n.01
+hat.n.01
+hat.n.02
+hat.v.01
+hat.v.02
+@@MASK@@
+@@NULL@@
