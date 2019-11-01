@@ -28,7 +28,7 @@ pip install torch==1.2.0
 pip install -r requirements.txt
 python -c "import nltk; nltk.download('wordnet')"
 python -m spacy download en_core_web_sm
-python setup.py install
+pip install --editable .
 ```
 
 Then make sure the tests pass:
