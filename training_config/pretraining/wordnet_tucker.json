@@ -1,0 +1,45 @@
+{
+    "dataset_reader": {
+        "type": "kg_tuple",
+    },
+    "validation_dataset_reader": {
+        "type": "kg_tuple",
+        "extra_files_for_gold_pairs": [
+            "s3://allennlp/knowbert/wordnet/relations_train99.txt",
+            "s3://allennlp/knowbert/wordnet/relations_dev01.txt",
+        ]
+    },
+
+    "train_data_path": "s3://allennlp/knowbert/wordnet/relations_train99.txt",
+    "validation_data_path": "s3://allennlp/knowbert/wordnet/relations_dev01.txt",
+
+    "model": {
+        "type": "kg_tuple",
+        "kg_tuple_predictor": {
+            "type": "tucker",
+            "num_entities": 324637 + 2,
+            // *2 for _reverse, +2 for PADDING, UNKNOWN
+            // +1 for synset_lemma
+            "num_relations": 11 * 2 + 17 * 2 + 1 + 2,
+            "entity_dim": 200,
+            "relation_dim": 30
+        }
+    },
+    "iterator": {
+        "type": "basic",
+        "batch_size": 128
+    },
+
+    "trainer": {
+        "optimizer": {
+            "type": "adam",
+            "lr": 0.01,
+        },
+        "validation_metric": "+mean_reciprocal_rank",
+        "num_serialized_models_to_keep": 2,
+        "num_epochs": 500,
+        "patience": 10,
+        "cuda_device": 0,
+    }
+
+}
