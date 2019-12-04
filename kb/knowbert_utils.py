@@ -3,6 +3,8 @@ from typing import Union, List
 
 from allennlp.common import Params
 from allennlp.data import Instance, DataIterator, Vocabulary
+from allennlp.common.file_utils import cached_path
+
 
 from kb.include_all import TokenizerAndCandidateGenerator
 from kb.bert_pretraining_reader import replace_candidates_with_mask_entity
@@ -12,8 +14,12 @@ import json
 
 def _extract_config_from_archive(model_archive):
     import tarfile
-    with tarfile.open(model_archive, 'r:gz') as archive:
-        config = Params(json.load(archive.extractfile('config.json')))
+    import tempfile
+    import os
+    with tempfile.TemporaryDirectory() as tmp:
+        with tarfile.open(model_archive, 'r:gz') as archive:
+            archive.extract('config.json', path=tmp)
+            config = Params.from_file(os.path.join(tmp, 'config.json'))
     return config
 
 
@@ -41,7 +47,7 @@ class KnowBertBatchifier:
                        wordnet_entity_file=None, vocab_dir=None):
 
         # get bert_tokenizer_and_candidate_generator
-        config = _extract_config_from_archive(model_archive)
+        config = _extract_config_from_archive(cached_path(model_archive))
 
         # look for the bert_tokenizers and candidate_generator
         candidate_generator_params = _find_key(
@@ -73,7 +79,7 @@ class KnowBertBatchifier:
     def _replace_mask(self, s):
         return s.replace('[MASK]', ' [MASK] ')
 
-    def iter_batches(self, sentences_or_sentence_pairs: Union[List[str], List[List[str]]]):
+    def iter_batches(self, sentences_or_sentence_pairs: Union[List[str], List[List[str]]], verbose=True):
         # create instances
         instances = []
         for sentence_or_sentence_pair in sentences_or_sentence_pairs:
@@ -87,8 +93,9 @@ class KnowBertBatchifier:
                 tokens_candidates = self.tokenizer_and_candidate_generator.\
                         tokenize_and_generate_candidates(self._replace_mask(sentence_or_sentence_pair))
 
-            print(self._replace_mask(sentence_or_sentence_pair))
-            print(tokens_candidates['tokens'])
+            if verbose:
+                print(self._replace_mask(sentence_or_sentence_pair))
+                print(tokens_candidates['tokens'])
 
             # now modify the masking if needed
             if self.masking_strategy == 'full_mask':
