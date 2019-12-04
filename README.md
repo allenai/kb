@@ -86,7 +86,7 @@ The results are in key `'mrr'`.
 ### Word-sense disambiguation
 
 To evaluate the internal WordNet linker on the ALL task evaluation
-from Navigli et al. (2017) follow these steps (Table 2).  First download the [Java scorer](http://lcl.uniroma1.it/wsdeval/) and [evaluation file](https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/semeval2007_semeval2013_semeval2015_senseval2_senseval3_all.json).
+from Raganato et al. (2017) follow these steps (Table 2).  First download the [Java scorer](http://lcl.uniroma1.it/wsdeval/) and [evaluation file](https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/semeval2007_semeval2013_semeval2015_senseval2_senseval3_all.json).
 
 Then run this command to generate predictions from KnowBert:
 
