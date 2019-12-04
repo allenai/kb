@@ -124,11 +124,11 @@ def span_filter_func(span: List[str]):
 class WikiCandidateMentionGenerator(MentionGenerator):
 
     defaults = {
-        "candidates_file": "s3://allennlp/knowbert/wiki_entity_linking/prob_yago_crosswikis_wikipedia_p_e_m.txt",
-        "wiki_file": "s3://allennlp/knowbert/wiki_entity_linking/wiki_name_id_map.txt",
-        "redirections_file": "s3://allennlp/knowbert/wiki_entity_linking/wiki_redirects.txt",
-        "disambiguations_file": "s3://allennlp/knowbert/wiki_entity_linking/wiki_disambiguation_pages.txt",
-        "entity_world_path": "s3://allennlp/knowbert/wiki_entity_linking/wiki_id_to_string.json",
+        "candidates_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wiki_entity_linking/prob_yago_crosswikis_wikipedia_p_e_m.txt",
+        "wiki_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wiki_entity_linking/wiki_name_id_map.txt",
+        "redirections_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wiki_entity_linking/wiki_redirects.txt",
+        "disambiguations_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wiki_entity_linking/wiki_disambiguation_pages.txt",
+        "entity_world_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wiki_entity_linking/wiki_id_to_string.json",
     }
 
     def __init__(self,
