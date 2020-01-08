@@ -1,5 +1,5 @@
-# this is the fp16_e branch
-git+git://github.com/matt-peters/allennlp.git@d7a9c6b7b295762c575e9588f168ceefb2f7d6d5
+# this is the fp16_e_s3 branch
+git+git://github.com/matt-peters/allennlp.git@2d7ba1cb108428aaffe2dce875648253b44cb5ba
 pytest
 nltk
 ipython
