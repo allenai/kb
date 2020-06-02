@@ -1,6 +1,6 @@
 {
     "vocabulary": {
-        "directory_path": "s3://allennlp/knowbert/models/vocabulary_wiki.tar.gz",
+        "directory_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/vocabulary_wiki.tar.gz",
     },
 
     "dataset_reader": {
@@ -110,7 +110,7 @@
 
     "train_data_path": {
         "language_modeling": "/home/matthewp/data/wikipedia_torontobooks_for_bert/*.txt",
-        "entity_linking": "s3://allennlp/knowbert/wiki_entity_linking/aida_train.txt",
+        "entity_linking": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wiki_entity_linking/aida_train.txt",
     },
 
     "model": {
@@ -126,7 +126,7 @@
                     "entity_embedding": {
                         "vocab_namespace": "entity",
                         "embedding_dim": 300,
-                        "pretrained_file": "s3://allennlp/knowbert/wiki_entity_linking/entities_glove_format.gz",
+                        "pretrained_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wiki_entity_linking/entities_glove_format.gz",
                         "trainable": false,
                         "sparse": false
                     },

@@ -11,7 +11,7 @@
                 },
                 "wordnet": {
                     "type": "wordnet_mention_generator",
-                    "entity_file": "s3://allennlp/knowbert/wordnet/entities.jsonl"
+                    "entity_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/entities.jsonl"
                 }
             },
             "entity_indexers": {
@@ -49,7 +49,7 @@
     "model": {
         "model": {
             "type": "from_archive",
-            "archive_file": "s3://allennlp/knowbert/models/knowbert_wiki_wordnet_model.tar.gz",
+            "archive_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/knowbert_wiki_wordnet_model.tar.gz",
         },
         "type": "simple-classifier",
         "bert_dim": 768,
@@ -98,6 +98,6 @@
         "validation_metric": "+accuracy"
     },
     "vocabulary": {
-        "directory_path": "s3://allennlp/knowbert/models/vocabulary_wordnet_wiki.tar.gz"
+        "directory_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/vocabulary_wordnet_wiki.tar.gz"
     }
 }

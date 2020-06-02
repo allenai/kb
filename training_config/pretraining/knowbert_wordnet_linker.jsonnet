@@ -1,11 +1,11 @@
 {
     "vocabulary": {
-        "directory_path": "s3://allennlp/knowbert/models/vocabulary_wordnet.tar.gz",
+        "directory_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/vocabulary_wordnet.tar.gz",
     },
 
     "dataset_reader": {
         "type": "wordnet_fine_grained",
-        "wordnet_entity_file": "s3://allennlp/knowbert/wordnet/entities.jsonl",
+        "wordnet_entity_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/entities.jsonl",
         "token_indexers": {
             "tokens": {
                 "type": "bert-pretrained",
@@ -27,7 +27,7 @@
         "should_remap_span_indices": false
     },
 
-    "train_data_path": "s3://allennlp/knowbert/wordnet/semcor_and_wordnet_examples.json",
+    "train_data_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/semcor_and_wordnet_examples.json",
 
     "iterator": {
         "type": "cross_sentence_linking",
@@ -62,9 +62,9 @@
                     "loss_type": "softmax",
                     "concat_entity_embedder": {
                         "type": "wordnet_all_embeddings",
-                        "entity_file": "s3://allennlp/knowbert/wordnet/entities.jsonl",
-                        "embedding_file": "s3://allennlp/knowbert/wordnet/wordnet_synsets_mask_null_vocab_embeddings_tucker_gensen.hdf5",
-                        "vocab_file": "s3://allennlp/knowbert/wordnet/wordnet_synsets_mask_null_vocab.txt",
+                        "entity_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/entities.jsonl",
+                        "embedding_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/wordnet_synsets_mask_null_vocab_embeddings_tucker_gensen.hdf5",
+                        "vocab_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/wordnet_synsets_mask_null_vocab.txt",
                         "entity_dim": 200,
                         "entity_h5_key": "tucker_gensen",
                     },

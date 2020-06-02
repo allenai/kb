@@ -5,13 +5,13 @@
     "validation_dataset_reader": {
         "type": "kg_tuple",
         "extra_files_for_gold_pairs": [
-            "s3://allennlp/knowbert/wordnet/relations_train99.txt",
-            "s3://allennlp/knowbert/wordnet/relations_dev01.txt",
+            "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/relations_train99.txt",
+            "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/relations_dev01.txt",
         ]
     },
 
-    "train_data_path": "s3://allennlp/knowbert/wordnet/relations_train99.txt",
-    "validation_data_path": "s3://allennlp/knowbert/wordnet/relations_dev01.txt",
+    "train_data_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/relations_train99.txt",
+    "validation_data_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/relations_dev01.txt",
 
     "model": {
         "type": "kg_tuple",

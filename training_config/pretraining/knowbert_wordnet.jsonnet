@@ -1,6 +1,6 @@
 {
     "vocabulary": {
-        "directory_path": "s3://allennlp/knowbert/models/vocabulary_wordnet.tar.gz",
+        "directory_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/vocabulary_wordnet.tar.gz",
     },
 
     "dataset_reader": {
@@ -15,7 +15,7 @@
                         "type": "bert_tokenizer_and_candidate_generator",
                         "entity_candidate_generators": {
                             "wordnet": {"type": "wordnet_mention_generator",
-                                        "entity_file": "s3://allennlp/knowbert/wordnet/entities.jsonl"},
+                                        "entity_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/entities.jsonl"},
                         },
                         "entity_indexers":  {
                             "wordnet": {
@@ -37,7 +37,7 @@
             },
             "entity_linking": {
                 "type": "wordnet_fine_grained",
-                "wordnet_entity_file": "s3://allennlp/knowbert/wordnet/entities.jsonl",
+                "wordnet_entity_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/entities.jsonl",
                 "token_indexers": {
                     "tokens": {
                         "type": "bert-pretrained",
@@ -112,7 +112,7 @@
 
     "train_data_path": {
         "language_modeling": "/home/matthewp/data/wikipedia_torontobooks_for_bert/*.txt",
-        "entity_linking": "s3://allennlp/knowbert/wordnet/semcor_and_wordnet_examples.json",
+        "entity_linking": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/semcor_and_wordnet_examples.json",
     },
 
     "model": {
@@ -128,9 +128,9 @@
                     "loss_type": "softmax",
                     "concat_entity_embedder": {
                         "type": "wordnet_all_embeddings",
-                        "entity_file": "s3://allennlp/knowbert/wordnet/entities.jsonl",
-                        "embedding_file": "s3://allennlp/knowbert/wordnet/wordnet_synsets_mask_null_vocab_embeddings_tucker_gensen.hdf5",
-                        "vocab_file": "s3://allennlp/knowbert/wordnet/wordnet_synsets_mask_null_vocab.txt",
+                        "entity_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/entities.jsonl",
+                        "embedding_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/wordnet_synsets_mask_null_vocab_embeddings_tucker_gensen.hdf5",
+                        "vocab_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/wordnet_synsets_mask_null_vocab.txt",
                         "entity_dim": 200,
                         "entity_h5_key": "tucker_gensen",
                     },

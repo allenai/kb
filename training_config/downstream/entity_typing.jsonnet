@@ -4,7 +4,7 @@
         "entity_masking": "entity_markers",
         "tokenizer_and_candidate_generator": {
             "type": "bert_tokenizer_and_candidate_generator",
-            "bert_model_type": "s3://allennlp/knowbert/models/bert-base-uncased-tacred-entity-markers-vocab.txt",
+            "bert_model_type": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/bert-base-uncased-tacred-entity-markers-vocab.txt",
             "do_lower_case": true,
             "entity_candidate_generators": {
                 "wiki": {
@@ -12,7 +12,7 @@
                 },
                 "wordnet": {
                     "type": "wordnet_mention_generator",
-                    "entity_file": "s3://allennlp/knowbert/wordnet/entities.jsonl"
+                    "entity_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/wordnet/entities.jsonl"
                 }
             },
             "entity_indexers": {
@@ -50,7 +50,7 @@
     "model": {
         "model": {
             "type": "from_archive",
-            "archive_file": "s3://allennlp/knowbert/models/knowbert_wiki_wordnet_model.tar.gz",
+            "archive_file": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/knowbert_wiki_wordnet_model.tar.gz",
         },
         "type": "simple-classifier",
         "bert_dim": 768,
@@ -100,6 +100,6 @@
         "validation_metric": "+f1"
     },
     "vocabulary": {
-        "directory_path": "s3://allennlp/knowbert/models/vocabulary_wordnet_wiki.tar.gz"
+        "directory_path": "https://allennlp.s3-us-west-2.amazonaws.com/knowbert/models/vocabulary_wordnet_wiki.tar.gz"
     }
 }
